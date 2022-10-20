@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Skyrim Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <fieldset name="main-fieldset">
+    
+    <h1 id="title">Skyrim Special Edition <br>Survey Form</h1>
+    <p id="description">This survey is to help us know more about the experience and opinions of the players towards the game.</p>
+    
+    <form id="survey-form">
+      <fieldset name="account-info">
+        <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="enter your name" required /></label>
+        <label for="email" id="email-label">Enter your email:  <input input id="email" type="email" placeholder="username@gmail.com" required /></label>
+        <label id="number-label">Enter your account number: <input id="number" type="number" min="1000000" max="9999999" placeholder="****079" required /></label>
+      </fieldset>
+      
+      <fieldset>What was your favorite role: 
+        <select id="dropdown">
+          <option>Assassin</option>
+          <option>Mage</option>
+          <option>Swordsman</option>
+          <option>Marksman</option>
+          <option>Priest</option>
+          </select> 
+      </fieldset>
+
+      <fieldset>
+        <label for="r1">Did you enjoy playing the game?<br>
+          <input type="radio" value="0" name="radiobutton1" id="r1" class="inline"> Yes </input><br>
+          <input type="radio" value="0" name="radiobutton1" id="r1" class="inline"> No</input>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="r2">Do you wish to continue playing the game?<br>
+          <input type="radio" value="0" name="radiobutton2" id="r2" class="inline"> Yes</input><br>
+          <input type="radio" value="0" name="radiobutton2" id="r2" class="inline"> No</input>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="ch">Check if there are any issues that you have experienced while playing the game: <br>
+          <input type="checkbox" value="0" id="ch" class="inline">Crashing</input> <br>
+          <input type="checkbox"value="0" id="ch" class="inline">Lagging</input> <br>
+          <input type="checkbox"value="0" id="ch" class="inline">Save problem</input> <br>
+          <input type="checkbox"value="0" id="ch" class="inline">Load problem</input> <br>
+          <input type="checkbox"value="0" id="ch" class="inline">Glitch</input> <br>
+          <textarea id="ch">Other issues experienced: Type here</textarea>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="more-feedback">Tell us more about how we can improve our game:
+          <textarea id="more-feedback">Type here  
+          </textarea>
+        </label>
+      </fieldset>
+
+      <button type="submit" id="submit">Submit</button>
+    
+    </form>
+
+  </fieldset>  
+  
+<body>
+</html>
